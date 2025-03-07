@@ -1,0 +1,24 @@
+:root {
+  --color-primary: #443627 --color-orange-dark: #443627
+    --color-dark-fade: #efdcab --color-secondary: #f2f6d0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem=16px  */
+}
+
+body {
+  font-size: 1.6 rem;
+  color: var(--color-secondary);
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
