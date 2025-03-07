@@ -1,6 +1,8 @@
 :root {
-  --color-primary: #443627 --color-orange-dark: #443627
-    --color-dark-fade: #efdcab --color-secondary: #f2f6d0;
+  --color-primary: rgb(169,153,57);
+  --color-orange-dark: #443627;
+  --color-dark-fade: #efdcab;
+  --color-secondary: #f2f6d0;
 }
 
 * {

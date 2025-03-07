@@ -1,0 +1,23 @@
+.header-socials {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    background-color:var( --color-primary);
+    padding: 10px 0;
+    
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.socials i{
+    font-style: italic;
+    font-weight: 300;
+    color: var(--color-dark-fade);
+}

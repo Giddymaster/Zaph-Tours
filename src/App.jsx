@@ -1,7 +1,9 @@
+import Hero from "./components/Hero/Hero";
+
 function App() {
   return (
     <div>
-      <h1>Zaph Tours</h1>
+      <Hero />
     </div>
   );
 }
