@@ -1,3 +1,107 @@
+.header {
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 50em) {
+    .header {
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 3px solid green; */
+    background-color: var(--color-dark-fade);
+}
+
+@media screen and (max-width: 50em) {
+    .header-navigation {
+        display: flex;
+        flex-direction: column; /* Stack items */
+        align-items: center;
+        width: 100%;
+    }
+} 
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 1rem;
+    /* border: 2px solid red; */
+}
+
+@media screen and (max-width: 50em) {
+    .nav-list {
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    .nav-list {
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.nav-list li a {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.search-bar{
+    display: flex;
+    gap: .5rem;
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+@media screen and (max-width: 50em) {
+    .search-bar{
+        margin-bottom: 1rem;
+    }
+}
+
+.search-input {
+    font-family: inherit;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    outline: none; 
+    transition: border-color 0.4s ease-in-out;
+}
+
+.search-input:focus {
+    border: 1px solid #a30d0d;
+}
+
+.search-btn {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.search-btn:hover {
+    background-color: var(--color-primary);
+    color: black;
+} 
+
 .header-socials {
     display: flex;
     gap: 3rem;
@@ -7,6 +111,11 @@
     
 }
 
+@media screen and (max-width: 50em) {
+    .header-socials {
+        display: none;
+    }
+}
 .socials{
     display: flex;
     justify-content: center;

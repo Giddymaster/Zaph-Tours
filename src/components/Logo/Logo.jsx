@@ -1,10 +1,10 @@
-import { IoAirplaneSharp } from "react-icons/io5";
+import logoImg from "./../../assets/zaph.jpg"
 import "./Logo.css"
 
 function Logo() {
   return (
     <div className="logo-img" >
-      <IoAirplaneSharp />
+      <img src={logoImg} alt="logo" />
     </div>
   )
 }
