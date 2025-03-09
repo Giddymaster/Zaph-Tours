@@ -37,6 +37,7 @@
   /* border: 2px solid red; */
 }
 
+
 @media screen and (max-width: 50em) {
   .nav-list {
     gap: 1rem;
@@ -56,6 +57,10 @@
   font-weight: 800;
   font-size: 1.5rem;
   color: black;
+}
+
+.nav-list li a:hover {
+  color: var(--color-orange);
 }
 
 .search-bar {

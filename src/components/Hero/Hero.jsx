@@ -6,8 +6,6 @@ import {
 } from "react-icons/fa6";
 import "./Hero.css";
 import Logo from "../Logo/Logo";
-import About from "../About/About";
-import Home from "../Home/Home";
 
 export function Hero() {
   return (
@@ -15,7 +13,6 @@ export function Hero() {
       <header className="header">
         <HeaderContacts />
         <HeaderNavigation />
-        <About />
       </header>
     </div>
   );
