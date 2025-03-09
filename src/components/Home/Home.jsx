@@ -21,6 +21,7 @@ function Home() {
           Discover the World <br />
           Enjoy authentic, responsible travel planned by experts
         </p>
+        <button className="booking-btn">Book Now!</button>
       </div>
     </div>
   );
