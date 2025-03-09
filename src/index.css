@@ -1,5 +1,5 @@
 :root {
-  --color-primary: rgb(169,153,57);
+  --color-primary: rgb(169, 153, 57);
   --color-orange-dark: #443627;
   --color-dark-fade: #efdcab;
   --color-secondary: #f2f6d0;
@@ -13,7 +13,6 @@
 
 html {
   font-size: 62.5%; /* 1rem=16px  */
-  
 }
 
 body {
@@ -26,5 +25,3 @@ body {
 a {
   text-decoration: none;
 }
-
-

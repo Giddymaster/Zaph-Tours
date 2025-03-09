@@ -1,9 +1,9 @@
-.logo-img{
-    margin-left: 1rem;
+.logo-img {
+  margin-left: 1rem;
 }
 
-.logo-img img{
-    width: 8rem;
-    object-fit: contain;
-    background-color: rgb(4, 87, 47, .9);
+.logo-img img {
+  width: 8rem;
+  object-fit: contain;
+  background-color: rgb(4, 87, 47, 0.9);
 }
