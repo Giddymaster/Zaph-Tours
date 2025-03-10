@@ -63,12 +63,34 @@
   color: var(--color-orange);
 }
 
+.nav-link {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--color-orange);
+}
+
+.nav-link.active {
+  color: orange;
+  font-weight: bold;
+}
+
+
 .search-bar {
   display: flex;
   gap: 0.5rem;
   position: relative;
   /* border: 2px solid red; */
 }
+
+
 
 @media screen and (max-width: 50em) {
   .search-bar {

@@ -6,8 +6,17 @@ import {
 } from "react-icons/fa6";
 import "./Hero.css";
 import Logo from "../Logo/Logo";
+import {NavLink} from 'react-router-dom'
+
+const navLinks = [
+  { to: '/', label: "home"},
+  { to: '/about', label: "about"},
+  { to: '/destinations', label: "destinations"},
+  { to: '/contact', label: "contact"},
+]
 
 export function Hero() {
+
   return (
     <div>
       <header className="header">
@@ -25,23 +34,19 @@ function HeaderNavigation() {
     <div className="header-navigation">
       <Logo />
       <nav className="header-nav">
-        <ul className="nav-list">
-          <li>
-            <a href="">Home</a>
-          </li>
-          <li>
-            <a href="">About</a>
-          </li>
-          <li>
-            <a href="">Featured Destinations</a>
-          </li>
-          <li>
-            <a href="">Trip Types</a>
-          </li>
-          <li>
-            <a href="">Contact Us</a>
-          </li>
-        </ul>
+        <ol className="nav-list">
+          {
+            navLinks.map(navlink => 
+              <NavLink 
+                key={navlink.label} 
+                to={navlink.to} 
+                className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+              >
+                {navlink.label}
+              </NavLink>
+            )
+          }
+        </ol>  
       </nav>
       <div className="search-bar">
         <input

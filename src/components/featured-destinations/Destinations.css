@@ -56,20 +56,3 @@
     color: #555;
     line-height: 1.4;
   }
-  
-  .booking-btn {
-    font-family: inherit;
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    outline: none;
-    border: none;
-    font-size: bold;
-    background-color: var(--color-orange-dark);
-    border-radius: 5px;
-}
-
-.booking-btn:hover{
-    background-color: rgb(255, 111, 0);
-    color: whitesmoke;
-}

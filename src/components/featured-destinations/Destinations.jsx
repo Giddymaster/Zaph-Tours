@@ -1,4 +1,5 @@
 import "./Destinations.css";
+import Button from "../Button/Button"
 import DestinationImg1 from "./../../assets/coast.jpg";
 import DestinationImg2 from "./../../assets/tsavo-national-park.jpg";
 import DestinationImg3 from "./../../assets/mt-kenya.jpg";
@@ -68,6 +69,7 @@ function Destinations() {
                     />
                 ))}
             </div>
+            <Button />
         </div>
     );
 }
@@ -83,7 +85,6 @@ function Destination({ image, description, title, excerpt }) {
                 <h3>{title}</h3>
                 <p>{excerpt}</p>
             </div>
-            <button className="booking-btn">Book Now!</button>
         </div>
     );
 }
