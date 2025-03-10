@@ -43,12 +43,32 @@
 
 .destination-info h3 {
   font-size: 1.5rem;
-  color: #2c3e50;
-  margin-bottom: 10px;
+  color: black;
+  margin-bottom: 1rem;
 }
 
 .destination-info p {
   font-size: 1rem;
-  color: #555;
+  color:black;
   line-height: 1.4;
+}
+
+.destination-price {
+  font-weight: bold;
+  margin: 10px 0;
+  color: var(--color-orange)!important
+}
+
+.destination-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 8px 15px;
+  background: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.destination-link:hover {
+  background: var(--color-orange);
 }
