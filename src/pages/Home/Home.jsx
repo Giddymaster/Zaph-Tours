@@ -21,7 +21,7 @@ function Home() {
           Discover the World <br />
           Enjoy authentic, responsible travel planned by experts
         </p>
-        <button className="booking-btn">Book Now!</button>
+        Nairobi National Park is home to diverse wildlife, including buffalo, giraffe, lions, leopards, baboons, zebras, wildebeest, and cheetahs,
       </div>
     </div>
   );

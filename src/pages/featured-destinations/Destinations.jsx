@@ -83,6 +83,7 @@ function Destination({ image, description, title, excerpt }) {
                 <h3>{title}</h3>
                 <p>{excerpt}</p>
             </div>
+            <button className="booking-btn">Book Now!</button>
         </div>
     );
 }
