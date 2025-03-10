@@ -37,7 +37,6 @@
   /* border: 2px solid red; */
 }
 
-
 @media screen and (max-width: 50em) {
   .nav-list {
     gap: 1rem;
@@ -82,15 +81,12 @@
   font-weight: bold;
 }
 
-
 .search-bar {
   display: flex;
   gap: 0.5rem;
   position: relative;
   /* border: 2px solid red; */
 }
-
-
 
 @media screen and (max-width: 50em) {
   .search-bar {

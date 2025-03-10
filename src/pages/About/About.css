@@ -1,35 +1,54 @@
 /* Container for About Section */
 .about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    color: black;
-    padding: 4rem;
-    gap: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 4rem;
+  gap: 5rem;
+}
+
+.about-us {
+  flex: 1;
+  flex-direction: column;
+}
+
+.about-us h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.about-us p {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.abt-img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 50em) {
+  .about-container {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text for better readability */
+    padding: 2rem; /* Reduce padding */
+    gap: 2rem; /* Reduce spacing */
   }
-  
- 
-  .about-us {
-    flex: 1; 
-    flex-direction: column; 
-  }
-  
+
   .about-us h3 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem; /* Reduce heading size */
   }
-  
+
   .about-us p {
-    font-size: 2rem;
-    line-height: 1.5;
+    font-size: 1.6rem; /* Reduce paragraph font size */
   }
-  
-  
+
   .abt-img {
-    width: 500px; 
-    height: auto;
-    border-radius: 10px; 
-    object-fit: cover;
+    width: 100%; /* Make image responsive */
+    max-width: 350px; /* Limit maximum width */
   }
-  
+}

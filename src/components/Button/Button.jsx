@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import "./Button.css";
 
 function button() {
@@ -6,7 +6,7 @@ function button() {
     <div>
       <button className="booking-btn">Book Now!</button>
     </div>
-  )
+  );
 }
 
-export default button
+export default button;

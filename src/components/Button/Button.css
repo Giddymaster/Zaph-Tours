@@ -1,17 +1,17 @@
 .booking-btn {
-    font-family: inherit;
-    position: absolute;
-    top: 70%;
-    right: 10%;
-    padding: 1rem 2rem;
-    outline: none;
-    border: none;
-    font-size: 2rem;
-    background-color: var(--color-orange-dark);
-    border-radius: 5px;
+  font-family: inherit;
+  position: absolute;
+  top: 70%;
+  right: 10%;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  background-color: var(--color-orange-dark);
+  border-radius: 5px;
 }
 
-.booking-btn:hover{
-    background-color: rgb(255, 111, 0);
-    color: whitesmoke;
+.booking-btn:hover {
+  background-color: rgb(255, 111, 0);
+  color: whitesmoke;
 }
