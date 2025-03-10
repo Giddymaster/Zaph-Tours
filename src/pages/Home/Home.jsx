@@ -6,6 +6,9 @@ import Button from "./../../components/Button/Button";
 import VideoSrc from "./../../assets/home-vid.mp4";
 import Contacts from "../contacts/Contacts";
 import Trips from "../Trip-Types/Trips";
+import Footer from "../../components/Footer/Footer";
+import Blogs from "../Blogs/Blogs";
+
 
 function Home() {
   return (
@@ -13,7 +16,10 @@ function Home() {
       <Hero />
       <HomeLanding />
       <About />
+      <Destinations />
       <Contacts />
+      <Blogs />
+      <Footer />
     </div>
   );
 }

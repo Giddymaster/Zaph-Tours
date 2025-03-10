@@ -14,6 +14,7 @@ const navLinks = [
   { to: "/trip-types", label: "trips" },
   { to: "/destinations", label: "destinations" },
   { to: "/contacts", label: "contacts" },
+  { to: "/blogs", label: "blogs" }
 ];
 
 export function Hero() {

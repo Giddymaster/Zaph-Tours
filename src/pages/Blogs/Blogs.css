@@ -1,0 +1,143 @@
+.blog-page {
+    background-color: #f9f9f9;
+    padding-bottom: 40px;
+  }
+  
+
+  .blog-hero {
+    background: url('./../../assets/mtkenya.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .blog-container {
+    display: flex;
+    width: 90%;
+    margin: 4rem 2rem;
+    gap: 3rem;
+  }
+  
+  .blog-main {
+    width: 70%;
+  }
+  
+  .blog-card {
+    display: flex;
+    gap: 3rem;
+    color: black;
+    height: 300px;
+    background: white;
+    margin-bottom: 2.5rem;
+  }
+  
+  .blog-image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-card h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .blog-date{
+    font-size: 14px;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+
+  .blog-excerpt {
+    font-family: inherit;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .read-more {
+    color:var(--color-dark-fade);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+    color: var(--color-orange);
+  }
+  
+  .blog-sidebar {
+    width: 30%;
+  }
+  
+  .search-box {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    outline: none;
+    border: none;
+  }
+  
+  .search-box input {
+    width: 75%;
+    padding: 10px;
+  }
+  
+  .search-box button {
+    width: 25%;
+    padding: 10px;
+    background-color: var(--color-primary) ;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .search-box button:hover {
+    background-color: var(--color-orange);
+  }
+  
+
+  .sidebar-section {
+    background: white;
+    padding: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+  }
+  
+  .sidebar-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+  }
+  
+  .sidebar-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .sidebar-section ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .sidebar-section ul li a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+  

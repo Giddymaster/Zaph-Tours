@@ -1,0 +1,89 @@
+.footer {
+    background-color: var(--color-primary);
+    color: #fff;
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .newsletter {
+    margin-bottom: 2rem;
+  }
+  
+  .newsletter h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .newsletter p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+  
+  .newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .newsletter input {
+    padding: 1rem;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .newsletter button {
+    padding: 1rem 15px;
+    background-color: var(--color-orange-dark);
+    color:black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .newsletter button:hover {
+    background-color: var(--color-orange);
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+  
+  .footer-column {
+    width: 200px;
+    text-align: left;
+  }
+  
+  .footer-column h4 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    margin-top: 2rem;
+    font-size: 14px;
+  }
+  
