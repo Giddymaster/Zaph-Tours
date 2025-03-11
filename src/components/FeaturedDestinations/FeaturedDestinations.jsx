@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import DestinationImg1 from "./../../assets/coast.jpg";
 import DestinationImg2 from "./../../assets/tsavo-national-park.jpg";
 import DestinationImg3 from "./../../assets/mt-kenya.jpg";
@@ -84,13 +84,7 @@ function FeaturedDestinations() {
 
 export default FeaturedDestinations;
 
-function Destination({
-  image,
-  description,
-  title,
-  excerpt,
-  link,
-}) {
+function Destination({ image, description, title, excerpt, link }) {
   return (
     <div className="destination-card">
       <img src={image} alt={description} className="destination-img" />

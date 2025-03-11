@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Testimonial.css"; 
+import "./Testimonial.css";
 import TestimonyIcon1 from "./../../assets/TestimonyIcon1.jpg";
 import TestimonyIcon2 from "./../../assets/TestimonyIcon2.jpg";
 import TestimonyIcon3 from "./../../assets/TestimonyIcon3.jpg";
@@ -15,7 +15,7 @@ function Testimonials() {
       description: "An unforgettable experience at the beach!",
       date: "04 March 2025",
       rating: "⭐⭐⭐⭐⭐",
-      link: "#"
+      link: "#",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ function Testimonials() {
       description: "Seeing wildlife near the city was amazing!",
       date: "22 Jan 2025",
       rating: "⭐⭐⭐⭐",
-      link: "#"
+      link: "#",
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ function Testimonials() {
       description: "A breathtaking adventure to the peak!",
       date: "27 Dec 2024",
       rating: "⭐⭐⭐⭐⭐",
-      link: "#"
+      link: "#",
     },
     {
       id: 4,
@@ -42,25 +42,29 @@ function Testimonials() {
       description: "A thrilling and scenic experience!",
       date: "30 Dec 2024",
       rating: "⭐⭐⭐⭐⭐",
-      link: "#"
+      link: "#",
     },
   ];
 
   return (
     <div className="testimonials-container">
-      <h1 className="testimonials-title">What travelers are saying about our trips</h1>
+      <h1 className="testimonials-title">
+        What travelers are saying about our trips
+      </h1>
       <div className="testimonials-grid">
-        {testimonies.map(({ id, icon, title, description, date, rating, link }) => (
-          <Testimony
-            key={id}
-            icon={icon}
-            title={title}
-            description={description}
-            date={date}
-            rating={rating}
-            link={link}
-          />
-        ))}
+        {testimonies.map(
+          ({ id, icon, title, description, date, rating, link }) => (
+            <Testimony
+              key={id}
+              icon={icon}
+              title={title}
+              description={description}
+              date={date}
+              rating={rating}
+              link={link}
+            />
+          ),
+        )}
       </div>
     </div>
   );
@@ -81,7 +85,7 @@ function Testimony({ icon, title, description, date, rating, link }) {
         <p className="testimony-rating">{rating}</p>
         {/* <a href={link} className="testimony-link">Read More</a> */}
         <Link to="/blogs" className="testimony-link">
-        Read More
+          Read More
         </Link>
       </div>
     </div>

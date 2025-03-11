@@ -22,7 +22,6 @@ function Footer() {
         </form>
       </div>
 
-
       <div className="footer-columns">
         <div className="footer-column">
           <h4>Quick Access</h4>
@@ -72,26 +71,39 @@ function Footer() {
         <div className="footer-column">
           <h4>Trip Packages</h4>
           <ul>
-            <li><a>Honeymoon Getaway</a></li>
-            <li><a>Mountain Hike</a></li>
-            <li><a>Diani Beach</a></li>
-            <li><a>Wildlife Safaris</a></li>
-            <li><a>Luxury vacations</a></li>
+            <li>
+              <a>Honeymoon Getaway</a>
+            </li>
+            <li>
+              <a>Mountain Hike</a>
+            </li>
+            <li>
+              <a>Diani Beach</a>
+            </li>
+            <li>
+              <a>Wildlife Safaris</a>
+            </li>
+            <li>
+              <a>Luxury vacations</a>
+            </li>
           </ul>
         </div>
         <div className="footer-column">
           <h4>Contact Details</h4>
           <div className="footer-contacts">
             <div className="foo-contact">
-            <Contact icon={<FaMapMarkerAlt />} para="Zaph Towers, Nairobi, Kenya" />
-            <Contact icon={<FaPhone />} para="+254 712 345 678" />
-            <Contact icon={<FaWhatsapp />} para="+254 712 345 678" />
-            <Contact icon={<FaEnvelope />} para="info@zaphtours.com" />
-            <Contact icon={<FaFacebook />} para="Zaph Tours" />
-            <Contact icon={<FaTwitter />} para="@Zaph_Tours" />
+              <Contact
+                icon={<FaMapMarkerAlt />}
+                para="Zaph Towers, Nairobi, Kenya"
+              />
+              <Contact icon={<FaPhone />} para="+254 712 345 678" />
+              <Contact icon={<FaWhatsapp />} para="+254 712 345 678" />
+              <Contact icon={<FaEnvelope />} para="info@zaphtours.com" />
+              <Contact icon={<FaFacebook />} para="Zaph Tours" />
+              <Contact icon={<FaTwitter />} para="@Zaph_Tours" />
             </div>
             <div className="footer-logo">
-            < Logo />
+              <Logo />
             </div>
           </div>
         </div>
@@ -107,7 +119,6 @@ function Footer() {
 }
 
 export default Footer;
-
 
 function Contact({ icon, para }) {
   return (

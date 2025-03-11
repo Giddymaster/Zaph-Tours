@@ -1,5 +1,5 @@
 import React from "react";
-import "./blogs.css";
+import "./Blogs.css";
 import BlogImg1 from "./../../assets/mt-kenya.jpg";
 import BlogImg2 from "./../../assets/lake-nakuru-img.jpg";
 import BlogImg3 from "./../../assets/Nairobi-natonal-park.jpg";
@@ -42,69 +42,69 @@ function blogs() {
 
   return (
     <>
-    <Hero />
-    <div className="blog-page">
-      <div className="blog-hero">
-        <h1>Explore the World with Zaph Tours</h1>
-      </div>
-      <div className="blog-container">
-        <div className="blog-main">
-          {blogPosts.map((post) => (
-            <div key={post.id} className="blog-card">
-              <img src={post.image} alt={post.title} className="blog-image" />
-              <div className="blog-content">
-                <h2>{post.title}</h2>
-                <p className="blog-date">
-                  {post.date} | {post.author}
-                </p>
-                <p className="blog-excerpt">{post.excerpt}</p>
-                <a href={`/blog/${post.id}`} className="read-more">
-                  Read More
-                </a>
+      <Hero />
+      <div className="blog-page">
+        <div className="blog-hero">
+          <h1>Explore the World with Zaph Tours</h1>
+        </div>
+        <div className="blog-container">
+          <div className="blog-main">
+            {blogPosts.map((post) => (
+              <div key={post.id} className="blog-card">
+                <img src={post.image} alt={post.title} className="blog-image" />
+                <div className="blog-content">
+                  <h2>{post.title}</h2>
+                  <p className="blog-date">
+                    {post.date} | {post.author}
+                  </p>
+                  <p className="blog-excerpt">{post.excerpt}</p>
+                  <a href={`/blog/${post.id}`} className="read-more">
+                    Read More
+                  </a>
+                </div>
               </div>
+            ))}
+          </div>
+
+          <div className="blog-sidebar">
+            <div className="search-box">
+              <input type="text" placeholder="Search..." />
+              <button>Search</button>
             </div>
-          ))}
-        </div>
 
-        <div className="blog-sidebar">
-          <div className="search-box">
-            <input type="text" placeholder="Search..." />
-            <button>Search</button>
-          </div>
+            <div className="sidebar-section">
+              <h3>Recent Posts</h3>
+              <ul>
+                <li>
+                  <a href="#">Top Beach Destinations</a>
+                </li>
+                <li>
+                  <a href="#">Luxury Eco-Tourism</a>
+                </li>
+                <li>
+                  <a href="#">Best Adventure Trips</a>
+                </li>
+              </ul>
+            </div>
 
-          <div className="sidebar-section">
-            <h3>Recent Posts</h3>
-            <ul>
-              <li>
-                <a href="#">Top Beach Destinations</a>
-              </li>
-              <li>
-                <a href="#">Luxury Eco-Tourism</a>
-              </li>
-              <li>
-                <a href="#">Best Adventure Trips</a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="sidebar-section">
-            <h3>Archives</h3>
-            <ul>
-              <li>
-                <a href="#">March 2025</a>
-              </li>
-              <li>
-                <a href="#">February 2025</a>
-              </li>
-              <li>
-                <a href="#">January 2025</a>
-              </li>
-            </ul>
+            <div className="sidebar-section">
+              <h3>Archives</h3>
+              <ul>
+                <li>
+                  <a href="#">March 2025</a>
+                </li>
+                <li>
+                  <a href="#">February 2025</a>
+                </li>
+                <li>
+                  <a href="#">January 2025</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <Footer />
+      <Footer />
     </>
   );
 }

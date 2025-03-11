@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Trips.css";
 import Contacts from "../contacts/Contacts";
 import Hero from "../../components/Hero/Hero";
@@ -22,9 +22,9 @@ function Trip() {
       image: TripImg1,
       description:
         "Experience a romantic getaway with breathtaking views, luxury resorts, and personalized services.",
-        duration: "7 Days | 6 Nights",
-        priceGroup: "$15000 per group of 5",
-        priceIndividual: "$3500 per person",
+      duration: "7 Days | 6 Nights",
+      priceGroup: "$15000 per group of 5",
+      priceIndividual: "$3500 per person",
       link: "/contacts",
     },
     {
@@ -33,10 +33,10 @@ function Trip() {
       image: TripImg2,
       description:
         "Enjoy fun-filled family trips with kid-friendly activities, guided tours, and adventure parks.",
-        duration: "4 Days | 3 Nights",
-        priceGroup: "$2900 per group of 5",
-        priceIndividual: "$700 per person",
-      link: "/contacts"
+      duration: "4 Days | 3 Nights",
+      priceGroup: "$2900 per group of 5",
+      priceIndividual: "$700 per person",
+      link: "/contacts",
     },
     {
       id: 3,
@@ -44,10 +44,10 @@ function Trip() {
       image: TripImg3,
       description:
         "Thrilling adventures including mountain climbing, rafting, and skydiving.",
-        duration: "6 Days | 5 Nights",
-        priceGroup: "$7500 per group of 5",
-        priceIndividual: "$1800 per person",
-      link: "/contacts"
+      duration: "6 Days | 5 Nights",
+      priceGroup: "$7500 per group of 5",
+      priceIndividual: "$1800 per person",
+      link: "/contacts",
     },
     {
       id: 4,
@@ -55,10 +55,10 @@ function Trip() {
       image: TripImg4,
       description:
         "Immerse yourself in rich cultures, traditional music, art, and historic sites.",
-        duration: "3 Days | 2 Nights",
-        priceGroup: "$7500 per group of 5",
-        priceIndividual: "$2000 per person",
-      link: "/contacts"
+      duration: "3 Days | 2 Nights",
+      priceGroup: "$7500 per group of 5",
+      priceIndividual: "$2000 per person",
+      link: "/contacts",
     },
     {
       id: 5,
@@ -66,9 +66,9 @@ function Trip() {
       image: TripImg5,
       description:
         "See the Big Five and the Great Migration in Africa’s best national parks.",
-        duration: "5 Days | 4 Nights",
-        priceGroup: "$9500 per group of 5",
-        priceIndividual: "$2190 per person",
+      duration: "5 Days | 4 Nights",
+      priceGroup: "$9500 per group of 5",
+      priceIndividual: "$2190 per person",
       link: "/contacts",
     },
     {
@@ -77,10 +77,10 @@ function Trip() {
       image: TripImg6,
       description:
         "Sustainable travel to nature reserves, conservation projects, and eco-resorts.",
-        duration: "4 Days | 3 Nights",
-        priceGroup: "$6750 per group of 5",
-        priceIndividual: "$1300 per person",
-      link: "/contacts"
+      duration: "4 Days | 3 Nights",
+      priceGroup: "$6750 per group of 5",
+      priceIndividual: "$1300 per person",
+      link: "/contacts",
     },
     {
       id: 7,
@@ -88,10 +88,10 @@ function Trip() {
       image: TripImg7,
       description:
         "Stay in world-class resorts with private pools, yacht cruises, and fine dining.",
-        duration: "6 Days | 5 Nights",
-        priceGroup: "$10750 per group of 5",
-        priceIndividual: "$2500 per person",
-      link: "/contacts"
+      duration: "6 Days | 5 Nights",
+      priceGroup: "$10750 per group of 5",
+      priceIndividual: "$2500 per person",
+      link: "/contacts",
     },
     {
       id: 8,
@@ -99,10 +99,10 @@ function Trip() {
       image: TripImg8,
       description:
         "Relax on pristine beaches with water sports, sunset cruises, and beachfront villas.",
-        duration: "4 Days | 3 Nights",
-        priceGroup: "$750 per group of 5",
-        priceIndividual: "$180 per person",
-      link: "/contacts"
+      duration: "4 Days | 3 Nights",
+      priceGroup: "$750 per group of 5",
+      priceIndividual: "$180 per person",
+      link: "/contacts",
     },
     {
       id: 9,
@@ -110,10 +110,10 @@ function Trip() {
       image: TripImg9,
       description:
         "Rejuvenate with spa treatments, yoga, and meditation in scenic locations.",
-        duration: "4 Days | 3 Nights",
-        priceGroup: "$750 per group of 5",
-        priceIndividual: "$180 per person",
-      link: "/contacts"
+      duration: "4 Days | 3 Nights",
+      priceGroup: "$750 per group of 5",
+      priceIndividual: "$180 per person",
+      link: "/contacts",
     },
     {
       id: 10,
@@ -121,10 +121,10 @@ function Trip() {
       image: TripImg10,
       description:
         "Explore the world’s best cuisines with expert-led food tours, wine tastings, and cooking classes.",
-        duration: "4 Days | 3 Nights",
-        priceGroup: "$750 per group of 5",
-        priceIndividual: "$180 per person",
-      link: "/contacts"
+      duration: "4 Days | 3 Nights",
+      priceGroup: "$750 per group of 5",
+      priceIndividual: "$180 per person",
+      link: "/contacts",
     },
   ];
 
@@ -144,7 +144,7 @@ function Trip() {
               priceGroup={trip.priceGroup}
               priceIndividual={trip.priceIndividual}
               offer={trip.offer}
-              link = {trip.link}
+              link={trip.link}
             />
           ))}
         </div>
@@ -156,7 +156,16 @@ function Trip() {
 
 export default Trip;
 
-function TripCard({ title, image, description, priceGroup,  priceIndividual ,duration, offer, link }) {
+function TripCard({
+  title,
+  image,
+  description,
+  priceGroup,
+  priceIndividual,
+  duration,
+  offer,
+  link,
+}) {
   return (
     <div className="trip-card">
       <img src={image} alt={title} className="trip-img" />
