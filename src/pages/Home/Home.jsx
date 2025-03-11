@@ -3,9 +3,9 @@ import Hero from "../../components/Hero/Hero";
 import About from "../About/About";
 import VideoSrc from "./../../assets/home-vid.mp4";
 import Footer from "../../components/Footer/Footer";
-import Blogs from "../Blogs/Blogs";
 import FeaturedDestinations from "../../components/FeaturedDestinations/FeaturedDestinations";
 import Testimonials from "../../components/Testimonials/Testimonials";
+import Button from "../../components/Button/Button";
 
 function Home() {
   return (
@@ -14,7 +14,6 @@ function Home() {
       <HomeLanding />
       <About />
       <FeaturedDestinations />
-      <Blogs />
       <Testimonials />
       <Footer />
     </div>
@@ -43,6 +42,7 @@ function HomeLanding() {
           Discover the World <br />
           Enjoy authentic, responsible travel planned by experts
         </p>
+        <Button />
       </div>
     </div>
   );

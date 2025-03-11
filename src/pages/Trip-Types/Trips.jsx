@@ -1,7 +1,8 @@
+import {Link} from "react-router-dom";
 import "./Trips.css";
+import Contacts from "../contacts/Contacts";
 import Hero from "../../components/Hero/Hero";
 import Footer from "../../components/Footer/Footer";
-
 import TripImg1 from "./../../assets/honeymoon.jpg";
 import TripImg2 from "./../../assets/family.jpg";
 import TripImg3 from "./../../assets/adventure.jpg";
@@ -21,8 +22,10 @@ function Trip() {
       image: TripImg1,
       description:
         "Experience a romantic getaway with breathtaking views, luxury resorts, and personalized services.",
-      price: "$2,500 per couple",
-      offer: "10% discount for early bookings",
+        duration: "7 Days | 6 Nights",
+        priceGroup: "$15000 per group of 5",
+        priceIndividual: "$3500 per person",
+      link: "/contacts",
     },
     {
       id: 2,
@@ -30,8 +33,10 @@ function Trip() {
       image: TripImg2,
       description:
         "Enjoy fun-filled family trips with kid-friendly activities, guided tours, and adventure parks.",
-      price: "$1,800 for a family of 4",
-      offer: "Free entry for kids under 5",
+        duration: "4 Days | 3 Nights",
+        priceGroup: "$2900 per group of 5",
+        priceIndividual: "$700 per person",
+      link: "/contacts"
     },
     {
       id: 3,
@@ -39,8 +44,10 @@ function Trip() {
       image: TripImg3,
       description:
         "Thrilling adventures including mountain climbing, rafting, and skydiving.",
-      price: "$1,200 per person",
-      offer: "Includes free safety gear rental",
+        duration: "6 Days | 5 Nights",
+        priceGroup: "$7500 per group of 5",
+        priceIndividual: "$1800 per person",
+      link: "/contacts"
     },
     {
       id: 4,
@@ -48,8 +55,10 @@ function Trip() {
       image: TripImg4,
       description:
         "Immerse yourself in rich cultures, traditional music, art, and historic sites.",
-      price: "$950 per person",
-      offer: "Group discounts available",
+        duration: "3 Days | 2 Nights",
+        priceGroup: "$7500 per group of 5",
+        priceIndividual: "$2000 per person",
+      link: "/contacts"
     },
     {
       id: 5,
@@ -57,8 +66,10 @@ function Trip() {
       image: TripImg5,
       description:
         "See the Big Five and the Great Migration in Africa’s best national parks.",
-      price: "$2,200 per person",
-      offer: "Includes game drive and guide",
+        duration: "5 Days | 4 Nights",
+        priceGroup: "$9500 per group of 5",
+        priceIndividual: "$2190 per person",
+      link: "/contacts",
     },
     {
       id: 6,
@@ -66,8 +77,10 @@ function Trip() {
       image: TripImg6,
       description:
         "Sustainable travel to nature reserves, conservation projects, and eco-resorts.",
-      price: "$1,500 per person",
-      offer: "Carbon-neutral travel included",
+        duration: "4 Days | 3 Nights",
+        priceGroup: "$6750 per group of 5",
+        priceIndividual: "$1300 per person",
+      link: "/contacts"
     },
     {
       id: 7,
@@ -75,8 +88,10 @@ function Trip() {
       image: TripImg7,
       description:
         "Stay in world-class resorts with private pools, yacht cruises, and fine dining.",
-      price: "$5,000 per person",
-      offer: "Personalized concierge service",
+        duration: "6 Days | 5 Nights",
+        priceGroup: "$10750 per group of 5",
+        priceIndividual: "$2500 per person",
+      link: "/contacts"
     },
     {
       id: 8,
@@ -84,8 +99,10 @@ function Trip() {
       image: TripImg8,
       description:
         "Relax on pristine beaches with water sports, sunset cruises, and beachfront villas.",
-      price: "$2,000 per person",
-      offer: "Includes free snorkeling gear",
+        duration: "4 Days | 3 Nights",
+        priceGroup: "$750 per group of 5",
+        priceIndividual: "$180 per person",
+      link: "/contacts"
     },
     {
       id: 9,
@@ -93,8 +110,10 @@ function Trip() {
       image: TripImg9,
       description:
         "Rejuvenate with spa treatments, yoga, and meditation in scenic locations.",
-      price: "$1,700 per person",
-      offer: "Includes free wellness consultation",
+        duration: "4 Days | 3 Nights",
+        priceGroup: "$750 per group of 5",
+        priceIndividual: "$180 per person",
+      link: "/contacts"
     },
     {
       id: 10,
@@ -102,8 +121,10 @@ function Trip() {
       image: TripImg10,
       description:
         "Explore the world’s best cuisines with expert-led food tours, wine tastings, and cooking classes.",
-      price: "$2,200 per person",
-      offer: "Includes a Michelin-star dining experience",
+        duration: "4 Days | 3 Nights",
+        priceGroup: "$750 per group of 5",
+        priceIndividual: "$180 per person",
+      link: "/contacts"
     },
   ];
 
@@ -119,8 +140,11 @@ function Trip() {
               title={trip.title}
               image={trip.image}
               description={trip.description}
-              price={trip.price}
+              duration={trip.duration}
+              priceGroup={trip.priceGroup}
+              priceIndividual={trip.priceIndividual}
               offer={trip.offer}
+              link = {trip.link}
             />
           ))}
         </div>
@@ -132,19 +156,21 @@ function Trip() {
 
 export default Trip;
 
-function TripCard({ title, image, description, price, offer }) {
+function TripCard({ title, image, description, priceGroup,  priceIndividual ,duration, offer, link }) {
   return (
     <div className="trip-card">
       <img src={image} alt={title} className="trip-img" />
       <div className="trip-info">
         <h3>{title}</h3>
         <p>{description}</p>
+        <p className="trip-duration">{duration}</p>
         <p className="trip-price">
-          <strong>Price:</strong> {price}
+          <strong>Group:</strong> {priceGroup} | <strong>Solo:</strong>{" "}
+          {priceIndividual}
         </p>
-        <p className="trip-offer">
-          <strong>Offer:</strong> {offer}
-        </p>
+        <Link to="/contacts" className="trip-link">
+          Book Now
+        </Link>
       </div>
     </div>
   );

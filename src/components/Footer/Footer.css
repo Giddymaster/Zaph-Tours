@@ -1,22 +1,26 @@
 .footer {
   background-color: var(--color-primary);
   color: #fff;
-  margin-top: 2rem;
-  padding: 2rem;
+  padding: 3rem 1.5rem;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .newsletter {
   margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 2px solid white;
+  padding-bottom: 4rem;
 }
 
 .newsletter h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin: 1rem;
+  color: var(--color-light);
 }
 
 .newsletter p {
-  font-size: 14px;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -24,65 +28,110 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .newsletter input {
   padding: 1rem;
-  width: 250px;
+  width: 20%;
   border: none;
   border-radius: 5px;
+  font-size: 1rem;
+}
+
+.newsletter input:focus {
+  outline: none;
+  border-color: var(--color-orange);
 }
 
 .newsletter button {
-  padding: 1rem 15px;
+  padding: 1rem 2rem;
   background-color: var(--color-orange-dark);
-  color: black;
+  color: #fff;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  transition: background 0.3s ease;
 }
 
 .newsletter button:hover {
   background-color: var(--color-orange);
 }
 
+
 .footer-columns {
+  padding: 2rem 10rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 2rem 0;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .footer-column {
-  width: 200px;
   text-align: left;
 }
 
 .footer-column h4 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  text-decoration: underline;
+  font-size: 2rem;
+  margin-bottom: 1.3rem;
+  text-transform: uppercase;
+  color: var(--color-light);
+  position: relative;
+}
+
+.footer-contacts{
+  display: flex;
+  font-size: 2rem;
+  gap: 2rem;
 }
 
 .footer-column ul {
   list-style: none;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
   padding: 0;
 }
 
 .footer-column ul li {
-  margin-bottom: 8px;
+  margin-bottom: 1rem;
 }
 
 .footer-column ul li a {
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
 }
 
 .footer-column ul li a:hover {
+  color: var(--color-orange);
   text-decoration: underline;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.footer-logo{
+  width: 100%;
+}
+
+.contact-item .icon {
+  font-size: 1.4rem;
+  color: var(--color-orange);
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 1.3rem;
 }
 
 .footer-bottom {
   margin-top: 2rem;
-  font-size: 14px;
+  font-size: 1.4rem;
+  text-align: center;
 }

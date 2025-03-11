@@ -1,10 +1,18 @@
 import React from "react";
 import "./Footer.css";
+import Logo from "../Logo/Logo";
+import {
+  FaPhone,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaWhatsapp,
+  FaFacebook,
+  FaTwitter,
+} from "react-icons/fa";
 
 function Footer() {
   return (
     <footer className="footer">
-      {/* Newsletter Section */}
       <div className="newsletter">
         <h3>Subscribe to Our Newsletter</h3>
         <p>Get updates and latest news delivered to your inbox.</p>
@@ -14,16 +22,8 @@ function Footer() {
         </form>
       </div>
 
-      {/* Footer Columns */}
-      <div className="footer-columns">
-        {/* Contact Details */}
-        <div className="footer-column">
-          <h4>Contact Details</h4>
-          <p>Email: info@example.com</p>
-          <p>Phone: +123 456 789</p>
-          <p>Address: 123 Street, City</p>
-        </div>
 
+      <div className="footer-columns">
         <div className="footer-column">
           <h4>Quick Access</h4>
           <ul>
@@ -68,6 +68,33 @@ function Footer() {
             </li>
           </ul>
         </div>
+
+        <div className="footer-column">
+          <h4>Trip Packages</h4>
+          <ul>
+            <li><a>Honeymoon Getaway</a></li>
+            <li><a>Mountain Hike</a></li>
+            <li><a>Diani Beach</a></li>
+            <li><a>Wildlife Safaris</a></li>
+            <li><a>Luxury vacations</a></li>
+          </ul>
+        </div>
+        <div className="footer-column">
+          <h4>Contact Details</h4>
+          <div className="footer-contacts">
+            <div className="foo-contact">
+            <Contact icon={<FaMapMarkerAlt />} para="Zaph Towers, Nairobi, Kenya" />
+            <Contact icon={<FaPhone />} para="+254 712 345 678" />
+            <Contact icon={<FaWhatsapp />} para="+254 712 345 678" />
+            <Contact icon={<FaEnvelope />} para="info@zaphtours.com" />
+            <Contact icon={<FaFacebook />} para="Zaph Tours" />
+            <Contact icon={<FaTwitter />} para="@Zaph_Tours" />
+            </div>
+            <div className="footer-logo">
+            < Logo />
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="footer-bottom">
@@ -80,3 +107,13 @@ function Footer() {
 }
 
 export default Footer;
+
+
+function Contact({ icon, para }) {
+  return (
+    <div className="contact-item">
+      <div className="icon">{icon}</div>
+      <p>{para}</p>
+    </div>
+  );
+}

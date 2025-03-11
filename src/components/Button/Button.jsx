@@ -1,12 +1,15 @@
 import React from "react";
 import "./Button.css";
+import { Link } from "react-router-dom";
 
-function button() {
+function Button() {
   return (
     <div>
-      <button className="booking-btn">Book Now!</button>
+      <Link to="/contacts">
+        <button className="booking-btn">Book Now!</button>
+      </Link>
     </div>
   );
 }
 
-export default button;
+export default Button;

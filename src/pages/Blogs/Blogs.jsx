@@ -3,6 +3,8 @@ import "./blogs.css";
 import BlogImg1 from "./../../assets/mt-kenya.jpg";
 import BlogImg2 from "./../../assets/lake-nakuru-img.jpg";
 import BlogImg3 from "./../../assets/Nairobi-natonal-park.jpg";
+import Hero from "../../components/Hero/Hero";
+import Footer from "../../components/Footer/Footer";
 // import BlogImg4 from "./../../assets/hero-img.jpg";
 // import BlogImg5 from "./../../assets/mt-rwenzori.jpeg";
 // import BlogImg6 from "./../../assets/tsavo-national-park.jpg";
@@ -39,6 +41,8 @@ function blogs() {
   ];
 
   return (
+    <>
+    <Hero />
     <div className="blog-page">
       <div className="blog-hero">
         <h1>Explore the World with Zaph Tours</h1>
@@ -100,6 +104,8 @@ function blogs() {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 
