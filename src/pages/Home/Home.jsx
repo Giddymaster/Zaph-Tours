@@ -5,6 +5,7 @@ import VideoSrc from "./../../assets/home-vid.mp4";
 import Footer from "../../components/Footer/Footer";
 import Blogs from "../Blogs/Blogs";
 import FeaturedDestinations from "../../components/FeaturedDestinations/FeaturedDestinations";
+import Testimonials from "../../components/Testimonials/Testimonials";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <About />
       <FeaturedDestinations />
       <Blogs />
+      <Testimonials />
       <Footer />
     </div>
   );

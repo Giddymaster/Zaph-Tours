@@ -1,5 +1,5 @@
 :root {
-  --color-primary: rgb(169, 153, 57);
+  --color-primary: rgb(169, 153, 57, 0.7);
   --color-orange-dark: #eda85e;
   --color-dark-fade: #efdcab;
   --color-secondary: #f2f6d0;
