@@ -1,14 +1,10 @@
 import "./Home.css";
 import Hero from "../../components/Hero/Hero";
 import About from "../About/About";
-import Destinations from "../Destinations/Destinations";
-import Button from "./../../components/Button/Button";
 import VideoSrc from "./../../assets/home-vid.mp4";
-import Contacts from "../contacts/Contacts";
-import Trips from "../Trip-Types/Trips";
 import Footer from "../../components/Footer/Footer";
 import Blogs from "../Blogs/Blogs";
-
+import FeaturedDestinations from "../../components/FeaturedDestinations/FeaturedDestinations";
 
 function Home() {
   return (
@@ -16,8 +12,7 @@ function Home() {
       <Hero />
       <HomeLanding />
       <About />
-      <Destinations />
-      <Contacts />
+      <FeaturedDestinations />
       <Blogs />
       <Footer />
     </div>

@@ -10,11 +10,10 @@ import { NavLink } from "react-router-dom";
 
 const navLinks = [
   { to: "/", label: "home" },
-  { to: "/about", label: "about" },
   { to: "/trip-types", label: "trips" },
   { to: "/destinations", label: "destinations" },
   { to: "/contacts", label: "contacts" },
-  { to: "/blogs", label: "blogs" }
+  { to: "/blogs", label: "blogs" },
 ];
 
 export function Hero() {

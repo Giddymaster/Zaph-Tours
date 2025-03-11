@@ -1,4 +1,6 @@
 import "./Trips.css";
+import Hero from "../../components/Hero/Hero";
+import Footer from "../../components/Footer/Footer";
 
 import TripImg1 from "./../../assets/honeymoon.jpg";
 import TripImg2 from "./../../assets/family.jpg";
@@ -106,21 +108,25 @@ function Trip() {
   ];
 
   return (
-    <div className="trip-container">
-      <h1 className="trip-title">Explore Our Travel Packages</h1>
-      <div className="trip-grid">
-        {trips.map((trip) => (
-          <TripCard
-            key={trip.id}
-            title={trip.title}
-            image={trip.image}
-            description={trip.description}
-            price={trip.price}
-            offer={trip.offer}
-          />
-        ))}
+    <>
+      <Hero />
+      <div className="trip-container">
+        <h1 className="trip-title">Explore Our Travel Packages</h1>
+        <div className="trip-grid">
+          {trips.map((trip) => (
+            <TripCard
+              key={trip.id}
+              title={trip.title}
+              image={trip.image}
+              description={trip.description}
+              price={trip.price}
+              offer={trip.offer}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 
@@ -133,8 +139,12 @@ function TripCard({ title, image, description, price, offer }) {
       <div className="trip-info">
         <h3>{title}</h3>
         <p>{description}</p>
-        <p className="trip-price"><strong>Price:</strong> {price}</p>
-        <p className="trip-offer"><strong>Offer:</strong> {offer}</p>
+        <p className="trip-price">
+          <strong>Price:</strong> {price}
+        </p>
+        <p className="trip-offer">
+          <strong>Offer:</strong> {offer}
+        </p>
       </div>
     </div>
   );
