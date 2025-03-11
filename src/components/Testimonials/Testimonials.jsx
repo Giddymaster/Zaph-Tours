@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Testimonial.css"; 
 import TestimonyIcon1 from "./../../assets/TestimonyIcon1.jpg";
 import TestimonyIcon2 from "./../../assets/TestimonyIcon2.jpg";
@@ -78,7 +79,10 @@ function Testimony({ icon, title, description, date, rating, link }) {
         <p className="testimony-description">{description}</p>
         <p className="testimony-date">{date}</p>
         <p className="testimony-rating">{rating}</p>
-        <a href={link} className="testimony-link">Read More</a>
+        {/* <a href={link} className="testimony-link">Read More</a> */}
+        <Link to="/blogs" className="testimony-link">
+        Read More
+        </Link>
       </div>
     </div>
   );
